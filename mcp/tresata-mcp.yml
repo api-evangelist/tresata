@@ -1,0 +1,60 @@
+generated: '2026-08-30'
+method: searched
+source: >-
+  https://api.github.com/orgs/tresata/repos (27 public repos), https://tresata.ai/
+  and its 10-page sitemap, and live probes of /.well-known/* on tresata.ai and
+  community.tresata.com, 2026-08-30.
+status: none
+note: >-
+  Tresata ships NO Model Context Protocol server for its own platform. It has no
+  public API to expose as one, and no hosted MCP endpoint, npx/uvx package, or
+  install instruction appears on tresata.ai, in its GitHub org, or at any
+  /.well-known/ path. No `MCPServer` pointer is wired into apis.yml, and no candidate
+  tool list is derived, because there is no OpenAPI to derive one from — inventing an
+  endpoint or a tool set here would read as a verified agent surface that does not
+  exist.
+deployment:
+  mode: none
+  endpoint: null
+  install: null
+  package: null
+  auth: unknown
+  verified: searched
+tools: []
+related_open_source:
+  note: >-
+    Tresata does publish public MCP code, but it is reference/teaching material for
+    the NANDA + NANDini agent ecosystem it co-authors with MIT — not a server that
+    exposes Tresata's own product. Recorded here so the finding is not mistaken for a
+    product surface on a later pass.
+  repositories:
+  - name: nanda-servers
+    url: https://github.com/tresata/nanda-servers
+    description: >-
+      "A catalogue of existing Nanda servers" — a how-to guide for building an MCP
+      server over SSE plus six third-party example servers (weather, calculator,
+      Bolna voice, OpenWeather, office supplies, synthetic data generator). None
+      wraps a Tresata API.
+    last_pushed: '2025-04-11'
+    first_party_product_server: false
+  - name: SDG_MCP
+    url: https://github.com/tresata/SDG_MCP
+    description: >-
+      Synthetic Data Generation MCP client/server demo built on FastMCP and CTGAN;
+      reads a local CSV and generates synthetic tabular data. Standalone sample code,
+      not a Tresata platform connector.
+    last_pushed: '2025-04-11'
+    first_party_product_server: false
+agent_research:
+  initiative: NANDini
+  expansion: Networked Agents Natural Distillation of Interconnected Nodal Intelligence
+  partner: MIT (Ramesh Raskar / NANDA)
+  sources:
+  - https://tresata.ai/blog/nandini
+  - https://tresata.ai/blog/defining-nandini
+  note: >-
+    Tresata markets "AF - Agent Foundation" as a research effort to define the data
+    foundations of an agentic future, and its CEO Abhishek Mehta is a named co-author
+    on the NANDini "Data Facts" metadata-schema paper. This is published research
+    posture, NOT a shipped agent surface: no Agent Card, no MCP endpoint and no
+    machine-readable Data Facts document is served from any Tresata host.

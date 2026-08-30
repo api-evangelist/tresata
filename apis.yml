@@ -1,7 +1,19 @@
 aid: tresata
 name: Tresata
-description: 'Tresata is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: >-
+  Tresata is a Charlotte, North Carolina enterprise software company building what it
+  describes as the foundational data layer for agentic AI. Its platform is marketed
+  under the product names AB (Asset Builder), AU (Unreal Data Engine) and AF (Agent
+  Foundation), alongside the Deduce and Discover surfaces, and automates data accuracy,
+  entity resolution and enrichment across AWS, Azure and Google Cloud with a low-code
+  interface. Pricing is usage-based, metered in Tresata Transaction Units (TTUs).
+  Tresata publishes first-party open-source Scala/Spark libraries under the com.tresata
+  group on Maven Central and co-authors the NANDini research effort with MIT on
+  decentralised agentic data architectures. As of this profile it operates no public
+  developer program: the platform is reached only through a login-gated tenant
+  application, and no API reference, OpenAPI, GraphQL SDL, AsyncAPI or other
+  machine-readable contract is published on any Tresata host.
+image: https://tresata.ai/logo.svg
 url: https://raw.githubusercontent.com/api-evangelist/tresata/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
@@ -12,6 +24,15 @@ created: '2026-08-30'
 modified: '2026-08-30'
 tags:
 - Company
+- Data
+- Analytics
+- Artificial Intelligence
+- Machine Learning
+- Data Management
+- Entity Resolution
+- Big Data
+- Enterprise Software
+- Agents
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -19,5 +40,65 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/tresata-domain-security.yml
 - type: Website
+  url: https://tresata.ai/
+- type: Products
+  url: https://tresata.ai/products
+- type: Pricing
+  url: https://tresata.ai/pricing
+- type: Integrations
+  url: https://tresata.ai/integrations
+- type: Blog
+  url: https://tresata.ai/perspective
+- type: Support
+  url: https://community.tresata.com/
+- type: Login
+  url: https://app-azure.tresata.com/web/home
+- type: TermsOfService
+  url: https://tresata.ai/terms-and-conditions
+- type: PrivacyPolicy
+  url: https://tresata.ai/privacy-policy
+- type: GitHubOrganization
+  url: https://github.com/tresata
+- type: LinkedIn
+  url: https://www.linkedin.com/company/tresata/
+- type: Instagram
+  url: https://www.instagram.com/tresatalife/
+- type: SecondaryMarketListing
   url: https://forgeglobal.com/tresata_stock/
+- type: Packages
+  url: packages/tresata-packages.yml
+- type: Plans
+  url: plans/tresata-plans-pricing.yml
+- type: RateLimits
+  url: rate-limits/tresata-rate-limits.yml
+- type: LLMsTxt
+  url: llms/tresata-llms.txt
+x-enrichment:
+  date: '2026-08-30'
+  status: minimal
+  artifacts_added: 7
+  pass: local-v1
+x-coverage:
+  state: none
+  reason: no-developer-program
+  detail: >-
+    Tresata's entire public surface is a ten-page Next.js marketing site plus a
+    Discourse community — its own sitemap.xml lists no developer, docs, or API page,
+    docs.tresata.com and developer.tresata.com do not resolve, and /openapi.json,
+    /swagger.json, /api-docs, /graphql and every /.well-known/* path 404 on both
+    tresata.ai and community.tresata.com; the only product entry point is the
+    login-gated tenant app at app-azure.tresata.com, whose TCP connection timed out
+    on a single bounded probe.
+  evidence:
+  - url: https://tresata.ai/sitemap.xml
+    status: 200
+  - url: https://tresata.ai/openapi.json
+    status: 404
+  - url: https://tresata.ai/.well-known/api-catalog
+    status: 404
+  - url: https://community.tresata.com/.well-known/agent-card.json
+    status: 404
+  checked: '2026-08-30'

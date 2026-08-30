@@ -1,0 +1,73 @@
+generated: '2026-08-30'
+method: probed
+source: >-
+  Live unauthenticated GET of each /.well-known/ path on every Tresata host reachable
+  from the public internet, 2026-08-30.
+note: >-
+  Nothing was served. Every probed path on tresata.ai and community.tresata.com
+  returned 404 with the site's HTML shell, so no document was saved and NO
+  `WellKnown` or `SecurityTxt` pointer is wired into apis.yml — this file records a
+  measured absence, not a presence. app-azure.tresata.com (the login-gated tenant
+  application linked from every page of tresata.ai) did not answer at all: the TCP
+  connection timed out on a single bounded attempt, recorded below as status 0.
+  tresata.com is a 308 redirect to tresata.ai and shares its origin, so it is not
+  probed separately.
+hosts:
+- host: tresata.ai
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null
+- host: community.tresata.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null
+- host: app-azure.tresata.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 0
+    file: null
+    error: connection timed out after 10s (single bounded attempt, not retried)

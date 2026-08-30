@@ -1,0 +1,54 @@
+generated: '2026-08-30'
+method: searched
+source: https://tresata.ai/pricing
+note: >-
+  Tresata publishes a pricing PAGE and a pricing MODEL, but no prices. Two offerings
+  are named — "Pay as You Go" and "Experience For Free" — and neither carries a
+  figure, a currency, an included quota or an overage rate anywhere on the page or in
+  the page's server-rendered FAQ. Every value below that is null was checked and is
+  genuinely unpublished, not unexamined. There is no self-serve checkout: the primary
+  call to action is "Start Now", which resolves to the login-gated tenant application
+  at app-azure.tresata.com, and the secondary is /book-demo.
+plan_count: 2
+currency: null
+billing_model: usage
+metering_unit:
+  name: Tresata Transaction Unit
+  abbreviation: TTU
+  definition: >-
+    "A Tresata Transaction Unit (TTU) is our standardized measure of computational
+    work. One TTU represents a specific amount of processing power used to execute
+    data operations on our platform." (verbatim, tresata.ai/pricing FAQ)
+  meters: compute consumed during data processing operations, not storage volume
+billing_period: monthly
+plans:
+- name: Pay as You Go
+  price: null
+  currency: null
+  billing_period: monthly
+  included_quota: null
+  overage: null
+  description: >-
+    "One simple system to deliver trusted data products for all your business wants
+    to do with AI, with an even simpler pricing model." Billed monthly on actual TTU
+    consumption; Tresata states it provides detailed usage reports.
+  limits: []
+- name: Experience For Free
+  price: 0
+  currency: null
+  billing_period: null
+  included_quota: unspecified credit grant
+  overage: null
+  description: >-
+    "Apply to become a Tresata certified user and receive credits to try before you
+    buy." Application-gated; the size of the credit grant is not published.
+  limits: []
+excluded_from_billing:
+- >-
+  Cloud infrastructure. "Tresata billing is separate from your cloud provider costs.
+  You'll receive separate bills for Tresata services and your underlying cloud
+  infrastructure." (tresata.ai/pricing FAQ)
+supported_clouds:
+- AWS
+- Azure
+- Google Cloud Platform

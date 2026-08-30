@@ -64,5 +64,23 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Tresata is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.
-- https://forgeglobal.com/tresata_stock/
+Tresata is a Charlotte, North Carolina enterprise software company building what it describes
+as the foundational data layer for agentic AI. Its platform is marketed under the product
+names AB (Asset Builder), AU (Unreal Data Engine) and AF (Agent Foundation), alongside the
+Deduce and Discover surfaces, and automates data accuracy, entity resolution and enrichment
+across AWS, Azure and Google Cloud. Pricing is usage-based, metered in Tresata Transaction
+Units (TTUs).
+
+**Tresata publishes no public API.** As of 2026-08-30 there is no developer portal, API
+reference, OpenAPI, GraphQL SDL, AsyncAPI, gRPC/protobuf, WSDL, MCP server or A2A agent card
+on any Tresata host. The platform is reached only through a login-gated tenant application.
+See `x-coverage` in `apis.yml` for the probes behind that finding.
+
+- Website — https://tresata.ai/
+- Products — https://tresata.ai/products
+- Pricing — https://tresata.ai/pricing
+- Integrations — https://tresata.ai/integrations
+- Perspective (blog) — https://tresata.ai/perspective
+- Community — https://community.tresata.com/
+- GitHub organization — https://github.com/tresata
+- Secondary-market listing — https://forgeglobal.com/tresata_stock/

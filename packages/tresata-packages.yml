@@ -1,0 +1,167 @@
+generated: '2026-08-30'
+method: searched
+source: >-
+  https://search.maven.org/solrsearch/select?q=g:com.tresata (Maven Central group
+  com.tresata, 19 coordinates) and https://api.github.com/orgs/tresata/repos
+  (27 public repositories). npm, PyPI, RubyGems, crates.io, NuGet and pkg.go.dev
+  were searched for "tresata" and returned no first-party package.
+note: >-
+  None of these are SDKs for a Tresata API. Tresata publishes no public API and no
+  client library; every package below is a general-purpose open-source JVM/Scala
+  data-engineering library for Apache Spark, Cascading/Scalding, Kafka or Akka HTTP,
+  released by Tresata engineers under the com.tresata Maven group. No `SDKs` pointer
+  is emitted in apis.yml for that reason. The currency signal here is decay: the
+  newest release on Maven Central is spark-datasetops 1.6.0 from 2024-01-05, and the
+  median coordinate last shipped in 2017.
+official_org: https://github.com/tresata
+registries_searched:
+- registry: maven
+  query: 'g:com.tresata'
+  result: 19 coordinates across 8 distinct artifacts
+- registry: npm
+  query: tresata
+  result: no first-party package
+- registry: pypi
+  query: tresata, tresata-mcp
+  result: 404 (no package)
+- registry: rubygems
+  query: tresata
+  result: no first-party package
+- registry: crates.io
+  query: tresata
+  result: no first-party package
+packages:
+- name: com.tresata:spark-datasetops
+  registry: maven
+  official: true
+  kind: library
+  language: Scala
+  version: 1.6.0
+  published: '2024-01-05'
+  scala_versions: ['2.11', '2.12', '2.13']
+  repository: https://github.com/tresata/spark-datasetops
+  url: https://central.sonatype.com/artifact/com.tresata/spark-datasetops_2.13
+  description: >-
+    A tiny library that aims to make Spark SQL Dataset more developer friendly.
+- name: com.tresata:spark-sorted
+  registry: maven
+  official: true
+  kind: library
+  language: Scala
+  version: 2.5.0
+  published: '2023-07-03'
+  scala_versions: ['2.10', '2.11', '2.12', '2.13']
+  repository: https://github.com/tresata/spark-sorted
+  url: https://central.sonatype.com/artifact/com.tresata/spark-sorted_2.13
+  description: Secondary sort and streaming reduce for Apache Spark.
+- name: com.tresata:akka-http-spnego
+  registry: maven
+  official: true
+  kind: library
+  language: Scala
+  version: 0.5.0
+  published: '2020-01-19'
+  scala_versions: ['2.11', '2.12', '2.13']
+  repository: https://github.com/tresata/akka-http-spnego
+  url: https://central.sonatype.com/artifact/com.tresata/akka-http-spnego_2.13
+  description: Kerberos based authentication for akka-http using SPNEGO.
+- name: com.tresata:spark-kafka
+  registry: maven
+  official: true
+  kind: library
+  language: Scala
+  version: 0.9.0
+  published: '2017-07-14'
+  scala_versions: ['2.10', '2.11']
+  repository: https://github.com/tresata/spark-kafka
+  url: https://central.sonatype.com/artifact/com.tresata/spark-kafka_2.11
+  description: Low level integration of Spark and Kafka.
+- name: com.tresata:spark-skewjoin
+  registry: maven
+  official: true
+  kind: library
+  language: Scala
+  version: 0.5.0
+  published: '2017-07-14'
+  scala_versions: ['2.10', '2.11']
+  repository: https://github.com/tresata/spark-skewjoin
+  url: https://central.sonatype.com/artifact/com.tresata/spark-skewjoin_2.11
+  description: Joins for skewed datasets in Spark.
+- name: com.tresata:spark-wordtophrase
+  registry: maven
+  official: true
+  kind: library
+  language: Scala
+  version: 0.1.0
+  published: '2017-07-14'
+  scala_versions: ['2.10', '2.11']
+  repository: https://github.com/tresata/spark-wordtophrase
+  url: https://central.sonatype.com/artifact/com.tresata/spark-wordtophrase_2.11
+  description: RDD based implementation of the word2phrase algorithm for Apache Spark.
+- name: com.tresata:cascading-opencsv
+  registry: maven
+  official: true
+  kind: library
+  language: Java
+  version: 0.2.0
+  published: '2015-09-12'
+  repository: https://github.com/tresata/cascading-opencsv
+  url: https://central.sonatype.com/artifact/com.tresata/cascading-opencsv
+  description: OpenCsv Tap for Cascading.
+- name: com.tresata:spark-scalding
+  registry: maven
+  official: true
+  kind: library
+  language: Scala
+  version: 0.5.0
+  published: '2015-08-05'
+  scala_versions: ['2.10', '2.11']
+  repository: https://github.com/tresata/spark-scalding
+  url: https://central.sonatype.com/artifact/com.tresata/spark-scalding_2.11
+  description: Use Cascading Taps and Scalding DSL with Spark.
+source_only:
+  note: >-
+    First-party open-source repositories in the GitHub org that are not published to
+    any package registry. version/published are null because there is no registry
+    metadata endpoint to read — checked, nothing to record.
+  repositories:
+  - name: ganitha
+    url: https://github.com/tresata/ganitha
+    language: Scala
+    version: null
+    published: null
+    last_pushed: '2014-11-18'
+    description: scalding powered machine learning
+  - name: spray-spnego
+    url: https://github.com/tresata/spray-spnego
+    language: Scala
+    version: null
+    published: null
+    last_pushed: '2018-04-09'
+    description: Kerberos based authentication for spray-routing using SPNEGO
+  - name: spark-columnar
+    url: https://github.com/tresata/spark-columnar
+    language: Scala
+    version: null
+    published: null
+    last_pushed: '2015-03-04'
+  - name: scopt-auto
+    url: https://github.com/tresata/scopt-auto
+    language: Scala
+    version: null
+    published: null
+    last_pushed: '2022-01-06'
+  - name: java-ssl
+    url: https://github.com/tresata/java-ssl
+    language: JavaScript
+    version: null
+    published: null
+    last_pushed: '2015-12-22'
+    description: Node.JS module to read Java keystore
+  - name: mongres
+    url: https://github.com/tresata/mongres
+    language: Scala
+    version: null
+    published: null
+    last_pushed: '2013-05-08'
+    description: Mongo Rest Server expressed in Scala Play

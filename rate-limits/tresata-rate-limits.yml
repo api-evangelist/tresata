@@ -1,0 +1,17 @@
+generated: '2026-08-30'
+method: searched
+source: >-
+  https://tresata.ai/pricing, https://tresata.ai/products, https://tresata.ai/integrations,
+  https://tresata.ai/sitemap.xml (all 10 published pages walked), 2026-08-30
+note: >-
+  An honest zero. Tresata publishes no API, so there is no rate-limit surface to
+  document: no limits, no windows, no burst allowance, no X-RateLimit-*/RateLimit-*
+  headers and no documented exhaustion status code appear anywhere on the public
+  site, and there is no docs host to search (docs.tresata.com and
+  developer.tresata.com do not resolve). Consumption on the platform is metered
+  commercially in TTUs rather than throttled at an API edge — see
+  plans/tresata-plans-pricing.yml. Recorded as measured, not assumed.
+limit_count: 0
+limits: []
+headers: []
+exhaustion_status: null
