@@ -13,6 +13,20 @@ description: >-
   developer program: the platform is reached only through a login-gated tenant
   application, and no API reference, OpenAPI, GraphQL SDL, AsyncAPI or other
   machine-readable contract is published on any Tresata host.
+accessModel:
+  pricing: free
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Free
+  confidence: medium
+  source:
+  - plans
+  - rate-limits
+  - security
+  generated: '2026-09-02'
+  method: derived
 image: https://tresata.ai/logo.svg
 url: https://raw.githubusercontent.com/api-evangelist/tresata/refs/heads/main/apis.yml
 x-type: company
