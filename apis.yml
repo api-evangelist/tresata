@@ -41,7 +41,7 @@ tags:
 - Data
 - Analytics
 - Artificial Intelligence
-- Machine-Learning
+- Machine Learning
 - Data Management
 - Entity Resolution
 - Big Data
@@ -58,6 +58,7 @@ tags_raw:
 - Big Data
 - Enterprise Software
 - Agents
+- Machine-Learning
 apis: []
 maintainers:
 - FN: Kin Lane
